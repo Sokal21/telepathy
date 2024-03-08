@@ -1,16 +1,8 @@
-import {
-  config,
-  useSpring,
-  animated,
-  useTransition,
-  useSpringRef,
-} from "react-spring";
-import { Button, Slider } from "antd";
-import { useEffect, useState } from "react";
-
-const getRandomArbitrary = (min: number, max: number): number => {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-};
+import { animated, useTransition, useSpringRef } from "react-spring";
+import { Button } from "antd";
+import { useEffect, useRef, useState } from "react";
+import { Wheel } from "./components/Wheel";
+import { getRandomArbitrary } from "./utils";
 
 const generateImageUrl = (): string => {
   const folder = getRandomArbitrary(1, 14);
@@ -20,39 +12,9 @@ const generateImageUrl = (): string => {
 };
 
 function App() {
-  const [showBar, setShowBar] = useState(false);
-  const [selectorPosition, setSelectorPosition] = useState(0);
+  const [hide, setHide] = useState(false);
   const [image, setImage] = useState<string>();
-
-  const [pointsStyles, apiPointsStyles] = useSpring(() => ({
-    from: {
-      left: "0",
-    },
-    config: config.stiff,
-  }));
-
-  const [barStyles, apiBarStyles] = useSpring(() => ({
-    from: {
-      width: "0%",
-    },
-    config: config.stiff,
-  }));
-
-  useEffect(() => {
-    if (showBar) {
-      apiBarStyles({
-        to: {
-          width: "0%",
-        },
-      });
-    } else {
-      apiBarStyles({
-        to: {
-          width: "100%",
-        },
-      });
-    }
-  }, [apiBarStyles, showBar]);
+  const changePointsRef = useRef(() => {});
 
   const transRef = useSpringRef();
   const transitions = useTransition(image, {
@@ -69,53 +31,22 @@ function App() {
 
   return (
     <div className="h-full flex-col flex items-center justify-center w-3/4">
-      <div className="w-[80%]">
-        <div className="bg-violet-200 h-52 relative overflow-hidden rounded-xl">
-          {
-            <div
-              className="w-3 h-full absolute bg-red-700 z-50 border-2"
-              style={{
-                left: `${selectorPosition}%`,
-              }}
-            />
-          }
-          <animated.div
-            className="h-full absolute bg-violet-500 z-40"
-            style={barStyles}
-          />
-          <animated.div className="absolute flex h-full" style={pointsStyles}>
-            <div className="w-7 bg-yellow-400 text-center">2</div>
-            <div className="w-7 bg-pink-700 text-center">3</div>
-            <div className="w-7 bg-sky-600 text-center">4</div>
-            <div className="w-7 bg-pink-700 text-center">3</div>
-            <div className="w-7 bg-yellow-400 text-center">2</div>
-          </animated.div>
-        </div>
-        <div className="w-full">
-          <Slider
-            min={1}
-            max={100}
-            onChange={setSelectorPosition}
-            value={typeof selectorPosition === "number" ? selectorPosition : 0}
-          />
-        </div>
+      <div className="mb-4">
+        <Wheel
+          width={650}
+          height={650}
+          changePointsRef={changePointsRef}
+          hide={hide}
+        />
       </div>
       <div className="flex justify-center items-centers gap-4">
-        <Button onClick={() => setShowBar(!showBar)}>
-          {showBar ? "Ocultar medidor" : "Mostrar medidor"}
+        <Button onClick={() => setHide(!hide)}>
+          {!hide ? "Ocultar medidor" : "Mostrar medidor"}
         </Button>
         <Button onClick={() => setImage(generateImageUrl())}>
           Nueva carta
         </Button>
-        <Button
-          onClick={() =>
-            apiPointsStyles({
-              to: {
-                left: `${getRandomArbitrary(0, 100)}%`,
-              },
-            })
-          }
-        >
+        <Button onClick={() => changePointsRef.current()}>
           Nueva position
         </Button>
       </div>
