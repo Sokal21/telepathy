@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { WheelProps } from "./types";
 import { config, useSpring, animated } from "react-spring";
 import { getRandomArbitrary } from "../../utils";
@@ -11,10 +11,19 @@ export const Wheel: React.FC<WheelProps> = ({
   height,
   width,
   changePointsRef,
+  resetPostionsRef,
   hide,
 }) => {
   const wheelRef = useRef<HTMLDivElement>(null);
-  const [markerRotation, setMarkerRotation] = useState(0);
+  //   const [markerRotation, setMarkerRotation] = useState(0);
+  const [markerRotationStyles, apiMarkerRotationStyles] = useSpring(() => ({
+    from: {
+      rotate: 0,
+      width,
+      height,
+    },
+    config: config.stiff,
+  }));
   const [pointsStyles, apiPointsStyles] = useSpring(() => ({
     from: {
       rotate: 0,
@@ -57,7 +66,19 @@ export const Wheel: React.FC<WheelProps> = ({
         },
       });
     };
-  }, [apiHiderStyles, apiPointsStyles, changePointsRef]);
+    resetPostionsRef.current = () => {
+      apiMarkerRotationStyles({
+        to: {
+          rotate: 0,
+        },
+      });
+    };
+  }, [
+    apiMarkerRotationStyles,
+    apiPointsStyles,
+    changePointsRef,
+    resetPostionsRef,
+  ]);
 
   const onDragStart = (event: React.DragEvent<HTMLDivElement>) => {
     event.dataTransfer.setDragImage(new Image(), 0, 0);
@@ -77,7 +98,11 @@ export const Wheel: React.FC<WheelProps> = ({
           Math.PI / 2) *
         (180 / Math.PI);
 
-      setMarkerRotation(clamp(angle, -82, 82));
+      apiMarkerRotationStyles({
+        to: {
+          rotate: clamp(angle, -82, 82),
+        },
+      });
     }
   };
 
@@ -88,7 +113,7 @@ export const Wheel: React.FC<WheelProps> = ({
         width,
         height,
       }}
-      className="bg-sky-100	 rounded-full relative overflow-hidden grid abso"
+      className="outline-[24px] outline-cyan-900 outline bg-white rounded-full relative overflow-hidden grid abso"
     >
       <animated.div className="absolute" style={pointsStyles}>
         <svg
@@ -103,6 +128,16 @@ export const Wheel: React.FC<WheelProps> = ({
             } ${width / 2 + (width * 0.06) / 2},${0}`}
             className="fill-sky-400"
           />
+          <text
+            dominantBaseline="middle"
+            textAnchor="middle"
+            x="50%"
+            y={height * 0.05}
+            fill="black"
+            font-size={width * 0.04}
+          >
+            4
+          </text>
         </svg>
         <svg
           height={height}
@@ -119,6 +154,16 @@ export const Wheel: React.FC<WheelProps> = ({
             } ${width / 2 + (width * 0.06) / 2},${0}`}
             className="fill-orange-500	"
           />
+          <text
+            dominantBaseline="middle"
+            textAnchor="middle"
+            x="50%"
+            y={height * 0.05}
+            fill="black"
+            font-size={width * 0.04}
+          >
+            3
+          </text>
         </svg>
         <svg
           height={height}
@@ -135,6 +180,16 @@ export const Wheel: React.FC<WheelProps> = ({
             } ${width / 2 + (width * 0.06) / 2},${0}`}
             className="fill-orange-500"
           />
+          <text
+            dominantBaseline="middle"
+            textAnchor="middle"
+            x="50%"
+            y={height * 0.05}
+            fill="black"
+            font-size={width * 0.04}
+          >
+            3
+          </text>
         </svg>
         <svg
           height={height}
@@ -151,6 +206,16 @@ export const Wheel: React.FC<WheelProps> = ({
             } ${width / 2 + (width * 0.06) / 2},${0}`}
             className="fill-yellow-400"
           />
+          <text
+            dominantBaseline="middle"
+            textAnchor="middle"
+            x="50%"
+            y={height * 0.05}
+            fill="black"
+            font-size={width * 0.04}
+          >
+            2
+          </text>
         </svg>
         <svg
           height={height}
@@ -167,39 +232,50 @@ export const Wheel: React.FC<WheelProps> = ({
             } ${width / 2 + (width * 0.06) / 2},${0}`}
             className="fill-yellow-400"
           />
+          <text
+            dominantBaseline="middle"
+            textAnchor="middle"
+            x="50%"
+            y={height * 0.05}
+            fill="black"
+            font-size={width * 0.04}
+          >
+            2
+          </text>
         </svg>
       </animated.div>
       <animated.div style={hiderStyles}>
-        <div className="w-full h-1/2 bg-violet-500 absolute bottom-0"></div>
-        <div className="w-1/2 h-1/2 bg-violet-500 absolute bottom-0 left-0 rotate-6 origin-top-right"></div>
-        <div className="w-1/2 h-1/2 bg-violet-500 absolute bottom-0 right-0 -rotate-6 origin-top-left"></div>
+        <div className="w-full h-1/2 bg-teal-100 absolute bottom-0"></div>
+        <div className="w-1/2 h-1/2 bg-teal-100 absolute bottom-0 left-0 rotate-6 origin-top-right"></div>
+        <div className="w-1/2 h-1/2 bg-teal-100 absolute bottom-0 right-0 -rotate-6 origin-top-left"></div>
       </animated.div>
       <div>
         <div className="w-full h-1/2 bg-cyan-900 absolute bottom-0"></div>
         <div className="w-1/2 h-1/2 bg-cyan-900 absolute bottom-0 left-0 rotate-6 origin-top-right"></div>
         <div className="w-1/2 h-1/2 bg-cyan-900 absolute bottom-0 right-0 -rotate-6 origin-top-left"></div>
       </div>
-      <div
+      <animated.div
         className="w-full h-full absolute"
-        style={{
-          transform: `rotate(${markerRotation}deg)`,
-          width,
-          height,
-        }}
+        style={markerRotationStyles}
+        // style={{
+        //   transform: `rotate(${markerRotation}deg)`,
+        //   width,
+        //   height,
+        // }}
       >
         <div
           draggable="true"
           onDragStart={onDragStart}
           onDrag={onDrag}
-          className="cursor-grab w-[1.5%] h-1/2 bg-red-700 absolute left-1/2 top-0 rounded-full origin-bottom -translate-x-1/2"
+          className="cursor-grab w-[1.5%] h-2/5 bg-red-600 absolute left-1/2 top-[5%] rounded-full origin-bottom -translate-x-1/2"
         ></div>
         <div
           draggable="true"
           onDragStart={onDragStart}
           onDrag={onDrag}
-          className="cursor-grab w-1/5 h-1/5 bg-red-700 absolute left-1/2 top-1/2 rounded-full -translate-y-1/2 -translate-x-1/2"
+          className="cursor-grab w-1/5 h-1/5 bg-red-600 absolute left-1/2 top-1/2 rounded-full -translate-y-1/2 -translate-x-1/2"
         ></div>
-      </div>
+      </animated.div>
     </div>
   );
 };

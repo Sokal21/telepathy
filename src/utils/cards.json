@@ -1,0 +1,1010 @@
+[
+    {
+        "left": "Malo",
+        "right": "Bueno"
+    },
+    {
+        "left": "Ligeramente adictivo",
+        "right": "Altamente adictivo"
+    },
+    {
+        "left": "Caliente",
+        "right": "Frío"
+    },
+    {
+        "left": "Normal",
+        "right": "extraño"
+    },
+    {
+        "left": "Incoloro",
+        "right": "Vistoso"
+    },
+    {
+        "left": "Bajo en calorías",
+        "right": "Alta en calorías"
+    },
+    {
+        "left": "Se siente mal",
+        "right": "Se siente bien"
+    },
+    {
+        "left": "No esencial",
+        "right": "Esencial"
+    },
+    {
+        "left": "Barato",
+        "right": "Costoso"
+    },
+    {
+        "left": "Arma subestimada",
+        "right": "Arma sobrevalorada"
+    },
+    {
+        "left": "Raro",
+        "right": "Común"
+    },
+    {
+        "left": "Emoji poco atractivo",
+        "right": "Emoji sexy"
+    },
+    {
+        "left": "Asunto fácil",
+        "right": "Tema difícil"
+    },
+    {
+        "left": "Desconocido",
+        "right": "Famoso"
+    },
+    {
+        "left": "Difícil de usar",
+        "right": "Fácil de usar"
+    },
+    {
+        "left": "Cansado",
+        "right": "Cableado"
+    },
+    {
+        "left": "Sucio",
+        "right": "Limpiar"
+    },
+    {
+        "left": "Requiere suerte",
+        "right": "Requiere habilidad"
+    },
+    {
+        "left": "Soso",
+        "right": "Sabroso"
+    },
+    {
+        "left": "Tema aburrido",
+        "right": "Tema fascinante"
+    },
+    {
+        "left": "Mal actor",
+        "right": "Buen actor"
+    },
+    {
+        "left": "Básico",
+        "right": "Hipster"
+    },
+    {
+        "left": "Trabajo peligroso",
+        "right": "Trabajo seguro"
+    },
+    {
+        "left": "Fantasía",
+        "right": "Ciencia ficción"
+    },
+    {
+        "left": "Casual",
+        "right": "Formal"
+    },
+    {
+        "left": "Poco pagado",
+        "right": "Pagado en exceso"
+    },
+    {
+        "left": "Seco",
+        "right": "Mojado"
+    },
+    {
+        "left": "Habilidad subestimada",
+        "right": "Habilidad sobrevalorada"
+    },
+    {
+        "left": "Prohibido",
+        "right": "Alentado"
+    },
+    {
+        "left": "Triste canción",
+        "right": "Cancion alegre"
+    },
+    {
+        "left": "Frágil",
+        "right": "Durable"
+    },
+    {
+        "left": "Friki",
+        "right": "Idiota"
+    },
+    {
+        "left": "Bueno",
+        "right": "Mal"
+    },
+    {
+        "left": "Peor día del año",
+        "right": "El mejor día del año"
+    },
+    {
+        "left": "Mal hábito",
+        "right": "Buen hábito"
+    },
+    {
+        "left": "Persona gato",
+        "right": "Persona perro"
+    },
+    {
+        "left": "Placer culpable",
+        "right": "Amar abiertamente"
+    },
+    {
+        "left": "Sin talento",
+        "right": "Talentoso"
+    },
+    {
+        "left": "Oscuro",
+        "right": "Ligero"
+    },
+    {
+        "left": "Actor subestimado",
+        "right": "Actor sobrevalorado"
+    },
+    {
+        "left": "Difícil de encontrar",
+        "right": "Fácil de encontrar"
+    },
+    {
+        "left": "Hombre feo",
+        "right": "Hermoso hombre"
+    },
+    {
+        "left": "Difícil de recordar",
+        "right": "Fácil de recordar"
+    },
+    {
+        "left": "De poca cultura",
+        "right": "Intelectual"
+    },
+    {
+        "left": "Insalubre",
+        "right": "Sano"
+    },
+    {
+        "left": "Mal hombre",
+        "right": "Buen hombre"
+    },
+    {
+        "left": "Históricamente importante",
+        "right": "Históricamente irrelevante"
+    },
+    {
+        "left": "Sin pelo",
+        "right": "Peludo"
+    },
+    {
+        "left": "Inflexible",
+        "right": "Flexible"
+    },
+    {
+        "left": "Mascota normal",
+        "right": "Mascotas exóticas"
+    },
+    {
+        "left": "Introvertido",
+        "right": "Extrovertido"
+    },
+    {
+        "left": "El libro fue mejor",
+        "right": "La película fue mejor"
+    },
+    {
+        "left": "Mala película",
+        "right": "Buena película"
+    },
+    {
+        "left": "Feo",
+        "right": "Hermosa"
+    },
+    {
+        "left": "Pasa lentamente",
+        "right": "Sucede de repente"
+    },
+    {
+        "left": "Trabajo",
+        "right": "Carrera"
+    },
+    {
+        "left": "Amado",
+        "right": "Odiado"
+    },
+    {
+        "left": "El lado luminoso de la fuerza",
+        "right": "El lado oscuro de la fuerza"
+    },
+    {
+        "left": "Aderezo de pizza malo",
+        "right": "Buena cobertura de pizza"
+    },
+    {
+        "left": "Distopía",
+        "right": "utopía"
+    },
+    {
+        "left": "Persona madura",
+        "right": "Persona inmadura"
+    },
+    {
+        "left": "Algo subestimado para poseer",
+        "right": "Algo sobrevalorado para poseer"
+    },
+    {
+        "left": "Persona desagradable",
+        "right": "Persona simpática"
+    },
+    {
+        "left": "Película de acción",
+        "right": "Película de aventura"
+    },
+    {
+        "left": "Actividad mental",
+        "right": "Actividad física"
+    },
+    {
+        "left": "Tema incontrovertible",
+        "right": "Tema controvertido"
+    },
+    {
+        "left": "Necesitar",
+        "right": "Desear"
+    },
+    {
+        "left": "Comida seca",
+        "right": "Comida húmeda"
+    },
+    {
+        "left": "Algo normal para poseer",
+        "right": "Algo extraño para poseer"
+    },
+    {
+        "left": "Derecho",
+        "right": "Curvy"
+    },
+    {
+        "left": "Mala persona",
+        "right": "Buena persona"
+    },
+    {
+        "left": "Años 80",
+        "right": "Años 90"
+    },
+    {
+        "left": "Ético para comer",
+        "right": "Poco ético para comer"
+    },
+    {
+        "left": "Película",
+        "right": "Película"
+    },
+    {
+        "left": "Opcional",
+        "right": "Obligatorio"
+    },
+    {
+        "left": "Letra del alfabeto subestimada",
+        "right": "Letra del alfabeto sobrevalorada"
+    },
+    {
+        "left": "Ordinario",
+        "right": "Extraordinario"
+    },
+    {
+        "left": "Difícil de pronunciar",
+        "right": "Fácil de pronunciar"
+    },
+    {
+        "left": "Baja calidad",
+        "right": "Alta calidad"
+    },
+    {
+        "left": "Animal poco atractivo",
+        "right": "Animal sexy"
+    },
+    {
+        "left": "Llanura",
+        "right": "Lujoso"
+    },
+    {
+        "left": "Tiene mala fama",
+        "right": "Tiene buena reputación"
+    },
+    {
+        "left": "Pobremente hecho",
+        "right": "Bien hecho"
+    },
+    {
+        "left": "No es un sándwich",
+        "right": "Un sándwich"
+    },
+    {
+        "left": "Lugar tranquilo",
+        "right": "Lugar ruidoso"
+    },
+    {
+        "left": "Comedia",
+        "right": "Drama"
+    },
+    {
+        "left": "Peligroso",
+        "right": "Seguro"
+    },
+    {
+        "left": "Culturalmente significativo",
+        "right": "Culturalmente insignificante"
+    },
+    {
+        "left": "Reemplazable",
+        "right": "Insustituible"
+    },
+    {
+        "left": "El peor atleta de todos los tiempos",
+        "right": "El mejor atleta de todos los tiempos"
+    },
+    {
+        "left": "Modelo a seguir",
+        "right": "Mala influencia"
+    },
+    {
+        "left": "Mayor inútil",
+        "right": "Mayor útil"
+    },
+    {
+        "left": "Pacífico",
+        "right": "Belicoso"
+    },
+    {
+        "left": "Película subestimada",
+        "right": "Película sobrevalorada"
+    },
+    {
+        "left": "Áspero",
+        "right": "Suave"
+    },
+    {
+        "left": "Mal por ti",
+        "right": "Bien por usted"
+    },
+    {
+        "left": "Redondo",
+        "right": "Puntiagudo"
+    },
+    {
+        "left": "Prueba de que Dios existe",
+        "right": "Prueba de que Dios no existe"
+    },
+    {
+        "left": "Película triste",
+        "right": "Película feliz"
+    },
+    {
+        "left": "Pérdida de tiempo",
+        "right": "Buen uso del tiempo"
+    },
+    {
+        "left": "Animal aterrador",
+        "right": "Lindo animal"
+    },
+    {
+        "left": "Convencional",
+        "right": "Nicho"
+    },
+    {
+        "left": "De corta duración",
+        "right": "Larga vida"
+    },
+    {
+        "left": "Nadie lo hace",
+        "right": "Todo el mundo lo hace"
+    },
+    {
+        "left": "Huele mal",
+        "right": "Huele bien"
+    },
+    {
+        "left": "Guerra de las Galaxias",
+        "right": "Star Trek"
+    },
+    {
+        "left": "Bocadillo",
+        "right": "Comida"
+    },
+    {
+        "left": "Compañía menos malvada",
+        "right": "La compañía más malvada"
+    },
+    {
+        "left": "Suave",
+        "right": "Difícil"
+    },
+    {
+        "left": "Sustento",
+        "right": "alta cocina"
+    },
+    {
+        "left": "Cuadrado",
+        "right": "Redondo"
+    },
+    {
+        "left": "Mejor caliente",
+        "right": "Mejor frío"
+    },
+    {
+        "left": "Estúpido",
+        "right": "Brillante"
+    },
+    {
+        "left": "Artesanal",
+        "right": "Producido en masa"
+    },
+    {
+        "left": "Mala superpotencia",
+        "right": "Buena superpotencia"
+    },
+    {
+        "left": "Ineficaz",
+        "right": "Eficaz"
+    },
+    {
+        "left": "Increíble",
+        "right": "Creíble"
+    },
+    {
+        "left": "Baja calidad",
+        "right": "De buen tono"
+    },
+    {
+        "left": "Temporal",
+        "right": "Permanente"
+    },
+    {
+        "left": "Parece una persona",
+        "right": "No parece una persona"
+    },
+    {
+        "left": "Sabe mal",
+        "right": "Sabe bien"
+    },
+    {
+        "left": "Deporte",
+        "right": "Juego"
+    },
+    {
+        "left": "Nada sofisticado",
+        "right": "Frío"
+    },
+    {
+        "left": "Peor persona viva",
+        "right": "La persona viva más grande"
+    },
+    {
+        "left": "Subestimado",
+        "right": "Sobrevalorado"
+    },
+    {
+        "left": "Comida sucia",
+        "right": "Comida limpia"
+    },
+    {
+        "left": "Poco ético",
+        "right": "Ético"
+    },
+    {
+        "left": "Mal regalo",
+        "right": "Buen regalo"
+    },
+    {
+        "left": "Pasado de moda",
+        "right": "De moda"
+    },
+    {
+        "left": "Luchador por la libertad",
+        "right": "Terrorista"
+    },
+    {
+        "left": "Imperdonable",
+        "right": "Perdonable"
+    },
+    {
+        "left": "Fracaso",
+        "right": "Obra maestra"
+    },
+    {
+        "left": "Inofensivo",
+        "right": "Perjudicial"
+    },
+    {
+        "left": "Gryffindor",
+        "right": "Slytherin"
+    },
+    {
+        "left": "Antihigiénico",
+        "right": "Higiénico"
+    },
+    {
+        "left": "Mala música",
+        "right": "Buena música"
+    },
+    {
+        "left": "Inútil",
+        "right": "Útil"
+    },
+    {
+        "left": "Película que Godzilla arruinaría",
+        "right": "Película que Godzilla mejoraría"
+    },
+    {
+        "left": "Sin importancia",
+        "right": "Importante"
+    },
+    {
+        "left": "Fácil de deletrear",
+        "right": "Difícil de deletrear"
+    },
+    {
+        "left": "Vicio",
+        "right": "Virtud"
+    },
+    {
+        "left": "Músico subestimado",
+        "right": "Músico sobrevalorado"
+    },
+    {
+        "left": "Actividad impopular",
+        "right": "Actividad popular"
+    },
+    {
+        "left": "Dividido",
+        "right": "Todo"
+    },
+    {
+        "left": "No fidedigno",
+        "right": "De confianza"
+    },
+    {
+        "left": "Fácil de matar",
+        "right": "Difícil de matar"
+    },
+    {
+        "left": "Inestable",
+        "right": "Estable"
+    },
+    {
+        "left": "Animal redondo",
+        "right": "Animal puntiagudo"
+    },
+    {
+        "left": "Mal programa de televisión",
+        "right": "Buen programa de televisión"
+    },
+    {
+        "left": "Tradicionalmente masculino",
+        "right": "Tradicionalmente femenino"
+    },
+    {
+        "left": "Parte del cuerpo inútil",
+        "right": "Parte del cuerpo útil"
+    },
+    {
+        "left": "Moda",
+        "right": "Clásico"
+    },
+    {
+        "left": "Débiles",
+        "right": "Fuerte"
+    },
+    {
+        "left": "Cereal repugnante",
+        "right": "Cereal delicioso"
+    },
+    {
+        "left": "Invención inútil",
+        "right": "Invención útil"
+    },
+    {
+        "left": "Liberal",
+        "right": "Conservador"
+    },
+    {
+        "left": "Impopular",
+        "right": "Popular"
+    },
+    {
+        "left": "Amigo",
+        "right": "Enemigo"
+    },
+    {
+        "left": "Aburrido",
+        "right": "Emocionante"
+    },
+    {
+        "left": "Huele mal",
+        "right": "Huele mal en el buen sentido"
+    },
+    {
+        "left": "Villano",
+        "right": "Héroe"
+    },
+    {
+        "left": "Algo subestimado para hacer",
+        "right": "Algo sobrevalorado para hacer"
+    },
+    {
+        "left": "Inútil en caso de emergencia",
+        "right": "Útil en caso de emergencia"
+    },
+    {
+        "left": "Para niños",
+        "right": "Para adultos"
+    },
+    {
+        "left": "Sabio",
+        "right": "Inteligente"
+    },
+    {
+        "left": "Fácil de hacer",
+        "right": "Difícil de hacer"
+    },
+    {
+        "left": "Sin valor",
+        "right": "No tiene precio"
+    },
+    {
+        "left": "Naturaleza",
+        "right": "Nutrir"
+    },
+    {
+        "left": "Dictadura",
+        "right": "Democracia"
+    },
+    {
+        "left": "Saludo normal",
+        "right": "Saludo extraño"
+    },
+    {
+        "left": "Nombre del perro",
+        "right": "Nombre del gato"
+    },
+    {
+        "left": "No partidista",
+        "right": "Partidista"
+    },
+    {
+        "left": "Limitado",
+        "right": "Infinito"
+    },
+    {
+        "left": "Evento casual",
+        "right": "Evento formal"
+    },
+    {
+        "left": "Mala inversión",
+        "right": "Buena inversión"
+    },
+    {
+        "left": "Charla",
+        "right": "Tema pesado"
+    },
+    {
+        "left": "Templado",
+        "right": "Picante"
+    },
+    {
+        "left": "Religioso",
+        "right": "Sacrílego"
+    },
+    {
+        "left": "No es arte",
+        "right": "Arte"
+    },
+    {
+        "left": "Ilegal",
+        "right": "Prohibido"
+    },
+    {
+        "left": "Popular",
+        "right": "Elitista"
+    },
+    {
+        "left": "Fuera de control",
+        "right": "En control"
+    },
+    {
+        "left": "Tranquilo",
+        "right": "Ruidoso"
+    },
+    {
+        "left": "Pokemon no sexy",
+        "right": "Sexy pokemon"
+    },
+    {
+        "left": "Secreto",
+        "right": "Conocimiento público"
+    },
+    {
+        "left": "Demasiado pequeña",
+        "right": "Demasiado grande"
+    },
+    {
+        "left": "Corto",
+        "right": "Largo"
+    },
+    {
+        "left": "Peor año de la historia",
+        "right": "Mejor año de la historia"
+    },
+    {
+        "left": "Socialista",
+        "right": "Capitalista"
+    },
+    {
+        "left": "Hecho poco conocido",
+        "right": "Hecho bien conocido"
+    },
+    {
+        "left": "Estacionario",
+        "right": "Móvil"
+    },
+    {
+        "left": "Problema local",
+        "right": "Problema global"
+    },
+    {
+        "left": "Talento",
+        "right": "Habilidad"
+    },
+    {
+        "left": "La peor era para viajar en el tiempo",
+        "right": "La mejor época para viajar en el tiempo"
+    },
+    {
+        "left": "Lo peor",
+        "right": "El mejor"
+    },
+    {
+        "left": "Número pequeño",
+        "right": "Gran número"
+    },
+    {
+        "left": "Cierto",
+        "right": "FALSO"
+    },
+    {
+        "left": "Anticuado",
+        "right": "Vanguardia"
+    },
+    {
+        "left": "Palabra asquerosa",
+        "right": "Hermosa palabra"
+    },
+    {
+        "left": "Pequeño",
+        "right": "Minúsculo"
+    },
+    {
+        "left": "Antinatural",
+        "right": "Natural"
+    },
+    {
+        "left": "Persona genuina",
+        "right": "Persona falsa"
+    },
+    {
+        "left": "Derivado",
+        "right": "Original"
+    },
+    {
+        "left": "Etiqueta",
+        "right": "Mañas"
+    },
+    {
+        "left": "Color poco atractivo",
+        "right": "Color sexy"
+    },
+    {
+        "left": "Te beneficia",
+        "right": "Beneficia a todos"
+    },
+    {
+        "left": "Sin Poder",
+        "right": "Poderoso"
+    },
+    {
+        "left": "No vape",
+        "right": "Vaporizadores"
+    },
+    {
+        "left": "Fruta",
+        "right": "Vegetal"
+    },
+    {
+        "left": "Ciencias",
+        "right": "Pseudociencia"
+    },
+    {
+        "left": "Tema divertido",
+        "right": "Tema serio"
+    },
+    {
+        "left": "Cojear",
+        "right": "Firma"
+    },
+    {
+        "left": "Placer culpable",
+        "right": "En realidad solo mal"
+    },
+    {
+        "left": "Chisme",
+        "right": "Noticias"
+    },
+    {
+        "left": "Difícil de sentarse",
+        "right": "Fácil de sentarse"
+    },
+    {
+        "left": "No es suficiente",
+        "right": "Demasiado"
+    },
+    {
+        "left": "Horizontal",
+        "right": "Vertical"
+    },
+    {
+        "left": "Sin perfume",
+        "right": "Perfumado"
+    },
+    {
+        "left": "Abrazable",
+        "right": "No abrazable"
+    },
+    {
+        "left": "Heterogéneo",
+        "right": "Homogéneo"
+    },
+    {
+        "left": "Inclusivo",
+        "right": "Exclusivo"
+    },
+    {
+        "left": "Mala raza de perro",
+        "right": "Buena raza de perro"
+    },
+    {
+        "left": "Arte",
+        "right": "Comercio"
+    },
+    {
+        "left": "Una maravilla de éxito",
+        "right": "Icono del pop"
+    },
+    {
+        "left": "Mal consejo",
+        "right": "Buen consejo"
+    },
+    {
+        "left": "garrapata",
+        "right": "Tock"
+    },
+    {
+        "left": "Caramelo malo",
+        "right": "Buen caramelo"
+    },
+    {
+        "left": "Tradicional",
+        "right": "Radical"
+    },
+    {
+        "left": "Mala sensación en la boca",
+        "right": "Buena sensación en boca"
+    },
+    {
+        "left": "Ilegal",
+        "right": "Legal"
+    },
+    {
+        "left": "Pensamiento profundo",
+        "right": "Pensamiento superficial"
+    },
+    {
+        "left": "Mala escuela",
+        "right": "Buena escuela"
+    },
+    {
+        "left": "Nunca a tiempo",
+        "right": "Siempre a tiempo"
+    },
+    {
+        "left": "No vivirá hasta los 100",
+        "right": "Vivirá hasta los 100"
+    },
+    {
+        "left": "Mal personaje de Disney",
+        "right": "Buen personaje de Disney"
+    },
+    {
+        "left": "Similar",
+        "right": "Idéntico"
+    },
+    {
+        "left": "Mal presidente",
+        "right": "Buen presidente"
+    },
+    {
+        "left": "extraño",
+        "right": "Extraño"
+    },
+    {
+        "left": "Famoso",
+        "right": "Infame"
+    },
+    {
+        "left": "Dios menos poderoso",
+        "right": "Dios más poderoso"
+    },
+    {
+        "left": "Persona aburrida",
+        "right": "Persona divertida"
+    },
+    {
+        "left": "Libro subestimado",
+        "right": "Libro sobrevalorado"
+    },
+    {
+        "left": "Sabiduría convencional",
+        "right": "Creencia marginal"
+    },
+    {
+        "left": "Peor quehacer",
+        "right": "Mejor tarea"
+    },
+    {
+        "left": "Especie en peligro",
+        "right": "Especies superpobladas"
+    },
+    {
+        "left": "Azul",
+        "right": "Verde"
+    },
+    {
+        "left": "Emocionante",
+        "right": "Espantoso"
+    },
+    {
+        "left": "Nerd",
+        "right": "Jock"
+    },
+    {
+        "left": "Esperado",
+        "right": "Inesperado"
+    },
+    {
+        "left": "Persona a la que podrías golpear",
+        "right": "Persona que te golpeó"
+    },
+    {
+        "left": "Fobia irrazonable",
+        "right": "Fobia razonable"
+    },
+    {
+        "left": "Juego subestimado",
+        "right": "Juego sobrevalorado"
+    }
+]
