@@ -107,7 +107,7 @@ export const PointsTracker: React.FC<PointsTrackerProps> = ({
                 labelDirection === "left" ? "-left-8" : "-right-8"
               )}
             >
-              {index}
+              {pointsToWin - index - 1}
             </label>
             <div
               className="bg-cyan-900 points-tracker__track rounded"
