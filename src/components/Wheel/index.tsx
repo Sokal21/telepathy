@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { WheelProps } from "./types";
 import { config, useSpring, animated } from "react-spring";
 import { getRandomArbitrary } from "../../utils";
+import { useDrag } from "@use-gesture/react";
 
 const clamp = (val: number, min: number, max: number): number => {
   return val > max ? max : val < min ? min : val;
@@ -80,32 +81,27 @@ export const Wheel: React.FC<WheelProps> = ({
     resetPostionsRef,
   ]);
 
-  const onDragStart = (event: React.DragEvent<HTMLDivElement>) => {
-    event.dataTransfer.setDragImage(new Image(), 0, 0);
-  };
-  const onDrag = (event: React.DragEvent<HTMLDivElement>) => {
-    if (wheelRef.current && (event.clientY !== 0 || event.clientX !== 0)) {
+  const bind = useDrag(({ active, values: [x, y] }) => {
+    if (wheelRef.current && active) {
       const wheelCenterX =
         wheelRef.current.offsetLeft + wheelRef.current.clientWidth / 2;
       const wheelCenterY =
         wheelRef.current.offsetTop + wheelRef.current.clientHeight / 2;
-
       const angle =
         (Math.atan2(
-          wheelCenterY - event.clientY,
-          wheelCenterX - event.clientX
+          wheelCenterY - y,
+          wheelCenterX - x
         ) -
           Math.PI / 2) *
         (180 / Math.PI);
-
+      console.log({ x, y, angle })
       apiMarkerRotationStyles({
         to: {
           rotate: clamp(angle, -82, 82),
         },
       });
     }
-  };
-
+  })
   return (
     <div
       ref={wheelRef}
@@ -123,9 +119,8 @@ export const Wheel: React.FC<WheelProps> = ({
           className="absolute"
         >
           <polygon
-            points={`${width / 2 - (width * 0.06) / 2},${0} ${width / 2},${
-              height / 2
-            } ${width / 2 + (width * 0.06) / 2},${0}`}
+            points={`${width / 2 - (width * 0.06) / 2},${0} ${width / 2},${height / 2
+              } ${width / 2 + (width * 0.06) / 2},${0}`}
             className="fill-sky-400"
           />
           <text
@@ -149,9 +144,8 @@ export const Wheel: React.FC<WheelProps> = ({
           }}
         >
           <polygon
-            points={`${width / 2 - (width * 0.06) / 2},${0} ${width / 2},${
-              height / 2
-            } ${width / 2 + (width * 0.06) / 2},${0}`}
+            points={`${width / 2 - (width * 0.06) / 2},${0} ${width / 2},${height / 2
+              } ${width / 2 + (width * 0.06) / 2},${0}`}
             className="fill-orange-500	"
           />
           <text
@@ -175,9 +169,8 @@ export const Wheel: React.FC<WheelProps> = ({
           }}
         >
           <polygon
-            points={`${width / 2 - (width * 0.06) / 2},${0} ${width / 2},${
-              height / 2
-            } ${width / 2 + (width * 0.06) / 2},${0}`}
+            points={`${width / 2 - (width * 0.06) / 2},${0} ${width / 2},${height / 2
+              } ${width / 2 + (width * 0.06) / 2},${0}`}
             className="fill-orange-500"
           />
           <text
@@ -201,9 +194,8 @@ export const Wheel: React.FC<WheelProps> = ({
           }}
         >
           <polygon
-            points={`${width / 2 - (width * 0.06) / 2},${0} ${width / 2},${
-              height / 2
-            } ${width / 2 + (width * 0.06) / 2},${0}`}
+            points={`${width / 2 - (width * 0.06) / 2},${0} ${width / 2},${height / 2
+              } ${width / 2 + (width * 0.06) / 2},${0}`}
             className="fill-yellow-400"
           />
           <text
@@ -227,9 +219,8 @@ export const Wheel: React.FC<WheelProps> = ({
           }}
         >
           <polygon
-            points={`${width / 2 - (width * 0.06) / 2},${0} ${width / 2},${
-              height / 2
-            } ${width / 2 + (width * 0.06) / 2},${0}`}
+            points={`${width / 2 - (width * 0.06) / 2},${0} ${width / 2},${height / 2
+              } ${width / 2 + (width * 0.06) / 2},${0}`}
             className="fill-yellow-400"
           />
           <text
@@ -257,22 +248,21 @@ export const Wheel: React.FC<WheelProps> = ({
       <animated.div
         className="w-full h-full absolute"
         style={markerRotationStyles}
-        // style={{
-        //   transform: `rotate(${markerRotation}deg)`,
-        //   width,
-        //   height,
-        // }}
+      // style={{
+      //   transform: `rotate(${markerRotation}deg)`,
+      //   width,
+      //   height,
+      // }}
       >
         <div
-          draggable="true"
-          onDragStart={onDragStart}
-          onDrag={onDrag}
-          className="cursor-grab w-[1.5%] h-2/5 bg-red-600 absolute left-1/2 top-[5%] rounded-full origin-bottom -translate-x-1/2"
-        ></div>
+        {...bind()}
+            className="cursor-grab w-[8%] h-2/5 absolute left-1/2 top-[5%] rounded-full origin-bottom -translate-x-1/2">
+          <div
+            className="cursor-grab w-[20%] h-full bg-red-600 absolute left-1/2 top-[1%] rounded-full origin-bottom -translate-x-1/2"
+          ></div>
+        </div>
         <div
-          draggable="true"
-          onDragStart={onDragStart}
-          onDrag={onDrag}
+          {...bind()}
           className="cursor-grab w-1/5 h-1/5 bg-red-600 absolute left-1/2 top-1/2 rounded-full -translate-y-1/2 -translate-x-1/2"
         ></div>
       </animated.div>
